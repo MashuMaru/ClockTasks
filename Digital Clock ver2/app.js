@@ -79,24 +79,6 @@ $(".add").click(function () {
     });
 //USEFUL BASE BELOW.
 
-
-$("body").on("click", ".done", function () {
-    $(".task-input").wrap("<strike>");
-    alert('well done.');
-
-    });
-
-// $("body").on("click", ".delete", function () {
-//     $('div .list-item').click(function(e) { 
-//         $(e.target).remove(); 
-//     });
-// });
-//     // alert('well done.');
-    
-
-
-// $('.delete').click(function() { $(".task-input").remove(); });
-
 //USEFUL base - below.
 $("body").on("click", ".delete", function () {
     alert("you clicked delete.");
@@ -104,24 +86,21 @@ $("body").on("click", ".delete", function () {
 //USEFUL base - above.
 
 
-// var numberOfList = (n);
-
 var listOfItems = [];
 
-$( "body" ).click(function() {
-    // $(".list").append( $( '<div class="list-item"><input type="Tasks"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>' ) );
-    var n = $( "div .list-item" ).length;
-    var numberOfList = (n);
-    console.log(numberOfList);
+$( ".add" ).click(function() {
+    var newID = $( "div .list-item" ).length;
+    var numberOfList = (newID);
+    console.log(listOfItems);
+    // console.log(numberOfList);
     listOfItems.push(numberOfList);
-    $(".delete").click (function () {
-        $.remove('listOfItem').$(".list-item")
-    })
-    // alert("you have " + numberOfList + " items to complete.");
-    // /*$( "span").*/alert( "There are " + n + " divs." + "Click to add more.");
-});
+
+    $(this, ".list-item").attr("id", newID);
+
+    $('.delete').click(function(){
+        $(this).parent().remove();
+     });
 
 
-//   Trigger the click to start
-// .trigger("click");
+    });
 
