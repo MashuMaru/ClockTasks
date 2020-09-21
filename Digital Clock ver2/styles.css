@@ -10,7 +10,8 @@ body {
 }
 
 h3 {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Quicksand', sans-serif;;
     font-size:20px;
     /* padding-right: 220px;
     padding-top: 2px; */
@@ -34,7 +35,8 @@ h3 {
     background: #000;
     color: white;
     padding: 5px 10px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Quicksand', sans-serif;;
     font-weight: bold;
     position: absolute;
     text-align: center;
@@ -48,7 +50,8 @@ h3 {
     background: #000;
     color: white;
     padding: 5px 10px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Quicksand', sans-serif;;
     font-weight: bold;
     position: absolute;
     text-align: center;
@@ -65,7 +68,8 @@ h3 {
     height: 100%;
     padding-top: 25px;
     /* font-family: 'Mina', sans-serif; */
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Quicksand', sans-serif;;
     border-radius: 15px;
 }
 
@@ -159,3 +163,6 @@ input:focus {
     opacity: 1;
 }
 
+.task-input {
+    font-family: 'Quicksand', sans-serif;;
+}
