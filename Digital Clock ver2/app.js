@@ -93,7 +93,7 @@ $( ".add" ).click(function() {
     var newID = $( "div .list-item" ).length;
     var numberOfList = (newID);
     console.log(listOfItems);
-    // console.log(numberOfList);
+
     listOfItems.push(numberOfList);
 
     $(this, ".list-item").attr("id", newID);
