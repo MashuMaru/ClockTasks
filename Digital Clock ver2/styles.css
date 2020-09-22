@@ -107,6 +107,10 @@ input:focus {
     border-color: white;
 }
 
+.done-input {
+    text-decoration: line-through;
+}
+
 .add {
     background: #81b214;
     display: block;

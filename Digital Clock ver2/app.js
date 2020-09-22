@@ -101,6 +101,11 @@ $( ".add" ).click(function() {
     $('.delete').click(function(){
         $(this).parent().remove();
      });
+
+     $('.done').click(function(){
+        $(this).parent().addClass(".done-input");
+        // $(".task-input").addClass(".done-input");
+     });
  
     });
 
