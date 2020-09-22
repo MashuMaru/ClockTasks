@@ -108,11 +108,12 @@ $( ".add" ).click(function() {
     //  });
     // works to strike through text
 
-     $(".done").toggle(function () {
-        $('.done').click(function(){
+    // the below function doesnt fully work 
+     $(".done").click(function () {
+        $('.done').toggle(function(){
             $(this).parent().find("input").css("text-decoration", "line-through");
          },  function () { $(this).parent().find("input").css("text-decoration", "none")}); 
     });
     });
-
+    // the above function doesnt fully work 
 
