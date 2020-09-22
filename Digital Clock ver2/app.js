@@ -103,16 +103,19 @@ $( ".add" ).click(function() {
      });
 
     // works to strike through text
-     //  $('.done').click(function(){
+
+    //   $('.done').click(function(){
     //     $(this).parent().find("input").css("text-decoration", "line-through");
     //  });
+    // });
+    
     // works to strike through text
 
-    // the below function doesnt fully work 
-    $(".done").click(function () {
-        $(this).parent().find("input").toggle() (function(){
-            $(this).parent().find("input").toggle().css("text-decoration", "line-through");
-         },  function () { $(this).parent().find("input").css("text-decoration", "none")}); 
-    });
-    });
-    // the above function doesnt fully work 
+    // the below function doesnt fully work - but does something....
+//     $(".done").toggle()(function () {
+//         $(this).parent().find("input").click() (function(){
+//             $(this).parent().find("input").click().css("text-decoration", "line-through");
+//          },  function () { $(this).parent().find("input").css("text-decoration", "none")}); 
+//     });
+// });
+    // the above function doesnt fully work - but does something....
