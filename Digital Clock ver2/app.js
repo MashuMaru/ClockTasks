@@ -111,7 +111,7 @@ $( ".add" ).click(function() {
     // the below function doesnt fully work 
     $(".done").click(function () {
         $(this).parent().find("input").toggle() (function(){
-            $(this).parent().find("input").css("text-decoration", "line-through");
+            $(this).parent().find("input").toggle().css("text-decoration", "line-through");
          },  function () { $(this).parent().find("input").css("text-decoration", "none")}); 
     });
     });
