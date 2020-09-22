@@ -102,11 +102,17 @@ $( ".add" ).click(function() {
         $(this).parent().remove();
      });
 
-     $('.done').click(function(){
-        $(this).parent().find("input").css("text-decoration", "line-through");
+    // works to strike through text
+     //  $('.done').click(function(){
+    //     $(this).parent().find("input").css("text-decoration", "line-through");
+    //  });
+    // works to strike through text
 
-     });
- 
+     $(".done").toggle(function () {
+        $('.done').click(function(){
+            $(this).parent().find("input").css("text-decoration", "line-through");
+         },  function () { $(this).parent().find("input").css("text-decoration", "none")}); 
+    });
     });
 
 
