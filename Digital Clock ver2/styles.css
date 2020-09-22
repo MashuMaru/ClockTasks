@@ -173,3 +173,7 @@ input:focus {
 .task-input {
     font-family: 'Quicksand', sans-serif;;
 }
+
+.done-strike {
+    text-decoration: line-through;
+}

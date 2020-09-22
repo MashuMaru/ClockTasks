@@ -99,23 +99,55 @@ $( ".add" ).click(function() {
     $(this, ".list-item").attr("id", newID);
 
     $('.delete').click(function(){
-        $(this).parent().remove();
-     });
+    $(this).parent().remove();
 
-    // works to strike through text
-
-    //   $('.done').click(function(){
-    //     $(this).parent().find("input").css("text-decoration", "line-through");
-    //  });
-    // });
     
-    // works to strike through text
+    });
 
-    // the below function doesnt fully work - but does something....
-//     $(".done").toggle()(function () {
-//         $(this).parent().find("input").click() (function(){
-//             $(this).parent().find("input").click().css("text-decoration", "line-through");
-//          },  function () { $(this).parent().find("input").css("text-decoration", "none")}); 
+
+// DOESN'T FULLY WORK.. .TOGGLE()
+    var itemsDone = [];
+
+    $( ".add" ).click(function() {
+        var newID2 = $( "div .input-task" ).length;
+        var numberOfInputs = (newID2) + 1;
+        console.log(itemsDone);
+    
+        listOfItems.push(numberOfInputs);
+    
+        $(this, ".input-task").attr("id", newID);
+
+        $(".done").click(function () {
+            $(".input-task").addClass("done-strike active")
+                $("input").toggleClass("done-strike");
+            });
+        });
+    });
+// DOESN'T FULLY WORK.. .TOGGLE()
+
+
+
+
+// THIS WORKS - BUT FOR ALL INPUTS. 
+// $(".done").click(function () {
+//     $(".input-task").addClass("done-strike active")
+//         $("input").toggleClass("done-strike");
 //     });
 // });
-    // the above function doesnt fully work - but does something....
+// THIS WORKS - BUT FOR ALL INPUTS. 
+
+
+
+
+
+
+
+
+
+// WORKS STRIKE THROUGH TEXT - NOT TOGGLE
+// $('.done').click(function(){
+//     $(this).parent().find("input").css("text-decoration", "line-through");
+//         });
+//     });
+// WORKS STRIKE THROUGH TEXT - NOT TOGGLE
+
