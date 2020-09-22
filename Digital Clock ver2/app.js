@@ -103,8 +103,8 @@ $( ".add" ).click(function() {
      });
 
      $('.done').click(function(){
-        $(this).parent().addClass(".done-input");
-        // $(".task-input").addClass(".done-input");
+        $(this).parent().find("input").css("text-decoration", "line-through");
+
      });
  
     });
