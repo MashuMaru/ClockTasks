@@ -75,9 +75,10 @@ function runTime() {
 setInterval(runTime, 1000);
 
 $(".add").click(function () {
-    $(".list").append($('<div id = "numberOfInputs" class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
+    $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
 
 });
+
 
 var listOfItems = [];
 
@@ -88,29 +89,20 @@ $( ".add" ).click(function() {
 
     listOfItems.push(numberOfList);
 
-    $(this, ".list-item").attr("id", newID);
+    $(".list-item").attr("id", newID);
+
+    $(".done").click(function (){
+        $("#" + listOfItems, Array).toggleClass("done-strike");
+    }) 
+
 
     $('.delete').click(function(){
     $(this).parent().remove();
 
-    var numberOfInputs = [];
-    $('.done').on("click", function () {
-        var inputs = $("input").length;
-        numberOfInputs.push(inputs);
-        var result = new Array();
-        result.push($(input).attr("id"));
-        $('input').attr("id", numberOfInputs);
-        console.log(numberOfInputs);
-
-
-    });
+ 
         });
     });
 
-    // $(".add").click(function () {
-    //     $(".list").append($('<div id = "numberOfInputs" class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
-    
-    // });
 // works above.
 
 
