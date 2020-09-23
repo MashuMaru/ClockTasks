@@ -109,17 +109,18 @@ $( ".add" ).click(function() {
     var itemsDone = [];
 
     $( ".add" ).click(function() {
-        var newID2 = $( "div .input-task" ).length;
-        var numberOfInputs = (newID2) + 1;
+        var newID2 = $( "div input" ).length;
+        var numberOfInputs = (newID2);
         console.log(itemsDone);
     
-        listOfItems.push(numberOfInputs);
+        itemsDone.push(numberOfInputs);
     
-        $(this, ".input-task").attr("id", newID);
+        $(".input-task").attr("id", newID);
 
         $(".done").click(function () {
             $(".input-task").addClass("done-strike active")
                 $("input").toggleClass("done-strike");
+
             });
         });
     });
