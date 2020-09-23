@@ -92,7 +92,7 @@ $( ".add" ).click(function() {
     $("input").attr("id", newID);
 
     $(".done").click(function (){
-        $("#" + listOfItems, Array).toggleClass("done-strike");
+        $("#" + newID).toggleClass("done-strike");
     }) 
 
 
