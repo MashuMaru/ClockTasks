@@ -90,11 +90,11 @@ $( ".add" ).click(function() {
     listOfItems.push(numberOfList);
 
     $("input").attr("id", newID);
-
+    //focus to be here.
     $(".done").click(function (){
         $("#" + newID).toggleClass("done-strike");
-    }) 
-
+    })
+    //focus to be here.
 
     $('.delete').click(function(){
     $(this).parent().remove();
