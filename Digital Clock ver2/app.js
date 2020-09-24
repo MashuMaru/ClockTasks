@@ -80,21 +80,65 @@ $(".add").click(function () {
 });
 
 
-var listOfItems = [];
+// var listOfItems = [];
 
 $( ".add" ).click(function() {
-    var newID = $( "div .list-item" ).length;
-    var numberOfList = (newID);
-    console.log(listOfItems);
+//     var newID = $( "div .list-item" ).length;
+//     var numberOfList = (newID);
 
-    listOfItems.push(numberOfList);
+//     listOfItems.push(numberOfList);
 
-    $("input").attr("id", newID);
-    //focus to be here.
     $(".done").click(function (){
-        $("#" + newID).toggleClass("done-strike");
-    })
+        $(this).siblings("input").toggleClass("done-strike");
+    });
+
+    $(".done").click(function (){
+        $('input').siblings("input").toggleClass("done-strike");
+    });
+
+
+
+
+
+
+
+// $( ".add" ).click(function() {
+//     var newID = $( "div .list-item" ).length;
+//     var numberOfList = (newID);
+//     // console.log(listOfItems);
+
+//     listOfItems.push(numberOfList);
+// // NEW CODE STARTS HERE
+
+// // var inputID = [];
+
+// // $("input").click(function (input){
+//     var inputNumbers = ($("input").length);
+//     var inputLength = inputNumbers;
+//     // inputID.push(inputLength);
+//     console.log(inputLength);
+
+
+//     $("input").click(function () {
+//         $(this).siblings("input").attr("id", inputLength);
+//     });
+    
+    // $(".done").click(function (){
+    //         $("#" + input).toggleClass("done-strike");
+// })
+
+
+// NEW CODE STARTS HERE
+
+// ADD BACK IF DOESN'T WORK
+    // $("input").attr("id", newID);
+    // //focus to be here.
+    // $(".done").click(function (){
+    //     $("#" + newID).toggleClass("done-strike");
+    // })
     //focus to be here.
+// ADD BACK IF DOESN'T WORK
+
 
     $('.delete').click(function(){
     $(this).parent().remove();
