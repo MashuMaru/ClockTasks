@@ -87,13 +87,13 @@ $(document).ready(function() {
     $(".done").click(function (){
         $(this).siblings("input").toggleClass("done-strike")});
     });
-});
+
 
 
 // $(document).ready(function() {
 //         $(".done").click(function (){
 //             $(this).siblings("input").toggleClass("done-strike")});
-//         });
+//         });\
 
 
 
@@ -145,7 +145,7 @@ $(document).ready(function() {
  
         });
     });
-
+});
 // works above.
 
 
