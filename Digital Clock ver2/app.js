@@ -80,21 +80,20 @@ $(".add").click(function () {
 });
 
 
-// var listOfItems = [];
-
+$(document).ready(function() {
 $( ".add" ).click(function() {
-//     var newID = $( "div .list-item" ).length;
-//     var numberOfList = (newID);
 
-//     listOfItems.push(numberOfList);
-
+$(document).ready(function() {
     $(".done").click(function (){
-        $(this).siblings("input").toggleClass("done-strike");
+        $(this).siblings("input").toggleClass("done-strike")});
     });
+});
 
-    // $(".done").click(function (){
-    //     $('input').siblings("input").toggleClass("done-strike");
-    // });
+
+// $(document).ready(function() {
+//         $(".done").click(function (){
+//             $(this).siblings("input").toggleClass("done-strike")});
+//         });
 
 
 
