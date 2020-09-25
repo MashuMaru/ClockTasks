@@ -3,6 +3,42 @@
 //     $("div").css("border", "3px solid red");
 // });
 
+
+//
+
+// $(document).ready ( function () {
+//     $(document).on ("click", "#littleNews", function () {
+//         alert("hi");
+//     });
+// });
+
+$(".add").click(function () {
+
+    $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
+
+    $("input").ready(function() {
+        $( ".add" ).click(function() {
+
+    $(".done").click(function (){
+        $(this).siblings("input").toggleClass("done-strike")});
+
+    $('.delete').click(function(){
+    $(this).parent().remove();
+
+    $(".done").click(function (){
+        $(this).siblings("input").toggleClass("done-strike")});
+
+ 
+        });
+    });
+});
+
+   
+
+});
+
+//
+
 function runTime() {
     var fullDate = new Date();
 
@@ -74,133 +110,30 @@ function runTime() {
 
 setInterval(runTime, 1000);
 
-$(".add").click(function () {
-    $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
 
-});
+// debugger;
+// $(".add").click(function () {
+//     $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
 
-
-$(document).ready(function() {
-$( ".add" ).click(function() {
-
-$(document).ready(function() {
-    $(".done").click(function (){
-        $(this).siblings("input").toggleClass("done-strike")});
-    });
-
-
-
-// $(document).ready(function() {
-//         $(".done").click(function (){
-//             $(this).siblings("input").toggleClass("done-strike")});
-//         });\
-
-
-
-
-
-
-
+// $("input").ready(function() {
 // $( ".add" ).click(function() {
-//     var newID = $( "div .list-item" ).length;
-//     var numberOfList = (newID);
-//     // console.log(listOfItems);
 
-//     listOfItems.push(numberOfList);
-// // NEW CODE STARTS HERE
+//     $(".done").click(function (){
+//         $(this).siblings("input").toggleClass("done-strike")});
 
-// // var inputID = [];
-
-// // $("input").click(function (input){
-//     var inputNumbers = ($("input").length);
-//     var inputLength = inputNumbers;
-//     // inputID.push(inputLength);
-//     console.log(inputLength);
-
-
-//     $("input").click(function () {
-//         $(this).siblings("input").attr("id", inputLength);
-//     });
-    
-    // $(".done").click(function (){
-    //         $("#" + input).toggleClass("done-strike");
-// })
-
-
-// NEW CODE STARTS HERE
-
-// ADD BACK IF DOESN'T WORK
-    // $("input").attr("id", newID);
-    // //focus to be here.
-    // $(".done").click(function (){
-    //     $("#" + newID).toggleClass("done-strike");
-    // })
-    //focus to be here.
-// ADD BACK IF DOESN'T WORK
-
-
-    $('.delete').click(function(){
-    $(this).parent().remove();
+//     $('.delete').click(function(){
+//     $(this).parent().remove();
 
  
-        });
-    });
-});
-// works above.
-
-
-    
-
-    // $(".done").click(function () {
-    // var inputs = $(".list-item").length;
-    // numberOfInputs.push(inputs);
-    // console.log(numberOfInputs);
-    // })
-    
-    // DOESN'T FULLY WORK.. .TOGGLE()
-    // var itemsDone = [];
-
-    // $( ".done" ).on("click", function() {
-    //     var newID2 = $(".add #newID2");
-    //     var numberOfInputs = (newID2);
-    //     console.log(itemsDone);
-    
-    //     itemsDone.push(numberOfInputs (+ 1));
-    
-    //     $("input").attr("id", newID2);
-
-    //     $(".done").click(function () {
-    //         $("#newID2").addClass("done-strike active")
-    //             $("#newID2").toggleClass("done-strike");
-        
-    //         });
-    //     });
-
-// DOESN'T FULLY WORK.. .TOGGLE()
-
-
-
-
-// THIS WORKS - BUT FOR ALL INPUTS. 
-// $(".done").click(function () {
-//     $(".input-task").addClass("done-strike active")
-//         $("input").toggleClass("done-strike");
-//     });
-// });
-// THIS WORKS - BUT FOR ALL INPUTS. 
-
-
-
-
-
-
-
-
-
-// WORKS STRIKE THROUGH TEXT - NOT TOGGLE
-// $('.done').click(function(){
-//     $(this).parent().find("input").css("text-decoration", "line-through");
 //         });
 //     });
-// WORKS STRIKE THROUGH TEXT - NOT TOGGLE
+// });
+
+   
+
+// });
+
+
+
+
 
