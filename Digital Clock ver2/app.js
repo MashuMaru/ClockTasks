@@ -6,37 +6,53 @@
 
 //
 
+// ADD THE BELOW BACK
 // $(document).ready ( function () {
-//     $(document).on ("click", "#littleNews", function () {
-//         alert("hi");
+//     $(document).on("click", "#list-item", function () {
+        $(".add").click(function () {
+            // $(".list").appendTo(".list").attr("id","list-item")
+            $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
+        
+            $("input").ready(function() {
+                $( ".add" ).click(function() {
+        
+            $(".done").click(function (){
+                $(this).siblings("input").toggleClass("done-strike")});
+        
+            $('.delete').click(function(){
+            $(this).parent().remove();
+        
+            $(".done").click(function (){
+                $(this).siblings("input").toggleClass("done-strike")});
+        
+                    });
+                 });
+            });
+        });
+    //     });
+
+    // })
+// $(".add").click(function () {
+
+// //     $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
+
+//     $("input").ready(function() {
+//         $( ".add" ).click(function() {
+
+//     $(".done").click(function (){
+//         $(this).siblings("input").toggleClass("done-strike")});
+
+//     $('.delete').click(function(){
+//     $(this).parent().remove();
+
+//     $(".done").click(function (){
+//         $(this).siblings("input").toggleClass("done-strike")});
+
+//             });
+//          });
 //     });
 // });
-
-$(".add").click(function () {
-
-    $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
-
-    $("input").ready(function() {
-        $( ".add" ).click(function() {
-
-    $(".done").click(function (){
-        $(this).siblings("input").toggleClass("done-strike")});
-
-    $('.delete').click(function(){
-    $(this).parent().remove();
-
-    $(".done").click(function (){
-        $(this).siblings("input").toggleClass("done-strike")});
-
- 
-        });
-    });
-});
-
-   
-
-});
-
+// });
 //
 
 function runTime() {
@@ -110,28 +126,6 @@ function runTime() {
 
 setInterval(runTime, 1000);
 
-
-// debugger;
-// $(".add").click(function () {
-//     $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
-
-// $("input").ready(function() {
-// $( ".add" ).click(function() {
-
-//     $(".done").click(function (){
-//         $(this).siblings("input").toggleClass("done-strike")});
-
-//     $('.delete').click(function(){
-//     $(this).parent().remove();
-
- 
-//         });
-//     });
-// });
-
-   
-
-// });
 
 
 
