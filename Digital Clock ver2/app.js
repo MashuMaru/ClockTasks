@@ -92,9 +92,9 @@ $( ".add" ).click(function() {
         $(this).siblings("input").toggleClass("done-strike");
     });
 
-    $(".done").click(function (){
-        $('input').siblings("input").toggleClass("done-strike");
-    });
+    // $(".done").click(function (){
+    //     $('input').siblings("input").toggleClass("done-strike");
+    // });
 
 
 
