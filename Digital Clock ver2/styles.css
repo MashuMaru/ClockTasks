@@ -162,10 +162,19 @@ input:focus {
 
 .delete:hover {
     background: #ec0101;
+    
     opacity: 1;
 }
 
 .done:hover {
+    background: #81b214;
+    opacity: 1;
+    /* height: 35px;
+    width: 35px;
+    border-radius: 50%; */
+}
+
+.done-click {
     background: #81b214;
     opacity: 1;
 }
@@ -177,4 +186,10 @@ input:focus {
 .done-strike {
     text-decoration: line-through;
     font-style: italic;
+    color: grey;
+}
+
+button {
+    outline: none;
+    
 }

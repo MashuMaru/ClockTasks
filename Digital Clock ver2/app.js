@@ -89,16 +89,24 @@ setInterval(runTime, 1000);
 $(document).ready(function () {
     $(".add").click(function () {
         $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
-    });
+        });
 
     $(document).on("click", ".delete", function(){
         $(this).parent().remove();
-    });
+        });
 
     $(document).on("click", ".done", function(){
         $(this).siblings(".task-input").toggleClass("done-strike")
         });
+        
+    $(document).on("click", ".done", function(){
+        $(this).toggleClass("done-click");
+        });
     });
+
+
+
+
 
 
 
