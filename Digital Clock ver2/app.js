@@ -8,14 +8,13 @@
 
 // ADD THE BELOW BACK
 // $(document).ready ( function () {
-//     $(document).on("click", "#list-item", function () {
+    // $(document).on("click", "#list-item", function () {
         $(".add").click(function () {
             // $(".list").appendTo(".list").attr("id","list-item")
             $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
         
-            $("input").ready(function() {
-                $( ".add" ).click(function() {
-        
+            // $("input").ready(function() {
+
             $(".done").click(function (){
                 $(this).siblings("input").toggleClass("done-strike")});
         
@@ -27,9 +26,9 @@
         
                     });
                  });
-            });
-        });
-    //     });
+            // });
+
+        // });
 
     // })
 // $(".add").click(function () {
