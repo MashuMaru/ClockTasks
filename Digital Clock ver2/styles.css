@@ -176,4 +176,5 @@ input:focus {
 
 .done-strike {
     text-decoration: line-through;
+    font-style: italic;
 }
