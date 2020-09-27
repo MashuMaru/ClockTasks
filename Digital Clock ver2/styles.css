@@ -142,6 +142,8 @@ select {
     left: 100%;
     margin-top: 30px;
     text-align: center;
+    font-style: italic;
+    /* text-decoration: line-through; */
     /* margin-bottom: 20px; */
     padding-bottom: 10px;
     border-bottom-style: solid 1px;
@@ -150,6 +152,8 @@ select {
     border-color: black;
     background: inherit;
     color: black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 select::ms-expand {
