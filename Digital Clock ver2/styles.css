@@ -70,10 +70,10 @@ h3 {
     /* font-family: sans-serif; */
     font-family: 'Quicksand', sans-serif;;
     font-weight: bold;
-    position: absolute;
+    position: relative;
     text-align: center;
     z-index: 1;
-    top: 750x;
+    top: 18px;
     left: 30%; 
     border-radius: 15px;
 }
@@ -94,6 +94,21 @@ h3 {
     background: #ccc;
     width: 400px;
     height: 120%;
+    max-height: 350px;
+    /* height: 500px; */
+    text-align: center;
+    position: relative;
+    margin: auto;
+    font-family: sans-serif;
+    padding: 15px;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.completed-section {
+    background: #ccc;
+    width: 400px;
+    height: 150px;
     max-height: 450px;
     /* height: 500px; */
     text-align: center;
@@ -139,7 +154,7 @@ input:focus {
     left: 46%;
     opacity: 0.5;
     /* margin-top: 15px; */
-    margin: 10px 0 10px 0;
+    margin: 10px 0 35px 0;
 
 }
 
