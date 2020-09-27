@@ -93,32 +93,27 @@ $(document).ready(function () {
 
     $(document).on("click", ".delete", function(){
         $(this).parent().remove();
+        // var input = $((this)(".task-input"));
+        // input.val()
         });
-
-        $('.delete').click(function (){
-            $.each($(".task-input"), function (){
-                $(".completed").append("<option>" + $(this).val() + "<option>");
-            })
-        })
+    
         
 
     $(document).on("click", ".done", function(){
         $(this).siblings(".task-input").toggleClass("done-strike")
         });
 
-    // $(document).on("click", ".done", function(){
-    //     $(this).toggleClass("done-click");
-    //     });
+
     });
 
-// $('.delete').click(function (){
-//     $.each($(".task-input"), function (){
-//         $(".completed").append("<option>" + $(this).val() + "<option>");
-//     })
-// })
 
-
-
+    // $(document).on("click", ".delete", function(){
+        $('.delete').click(function (){
+            $.each($(".task-input"), function (){
+                $(".completed").append("<option>" + $(this).val() + "<option>");
+            })
+        })
+    // })
 
 
 
