@@ -156,7 +156,7 @@ select::ms-expand {
     display: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    text-indent: 1px;
+    text-indent: 2px;
     text-overflow: '';
 }
 
