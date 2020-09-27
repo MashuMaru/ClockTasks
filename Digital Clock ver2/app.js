@@ -95,14 +95,27 @@ $(document).ready(function () {
         $(this).parent().remove();
         });
 
+        $('.delete').click(function (){
+            $.each($(".task-input"), function (){
+                $(".completed").append("<option>" + $(this).val() + "<option>");
+            })
+        })
+        
+
     $(document).on("click", ".done", function(){
         $(this).siblings(".task-input").toggleClass("done-strike")
         });
-        
-    $(document).on("click", ".done", function(){
-        $(this).toggleClass("done-click");
-        });
+
+    // $(document).on("click", ".done", function(){
+    //     $(this).toggleClass("done-click");
+    //     });
     });
+
+// $('.delete').click(function (){
+//     $.each($(".task-input"), function (){
+//         $(".completed").append("<option>" + $(this).val() + "<option>");
+//     })
+// })
 
 
 

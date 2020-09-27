@@ -108,8 +108,8 @@ h3 {
 .completed-section {
     background: #ccc;
     width: 400px;
-    height: 150px;
-    max-height: 450px;
+    height: 250px;
+    max-height: 250px;
     /* height: 500px; */
     text-align: center;
     position: relative;
@@ -133,6 +133,31 @@ input {
     border-color: black;
     background: inherit;
     color: black;
+}
+
+select {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    width: 65%;
+    left: 100%;
+    margin-top: 30px;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    padding-bottom: 10px;
+    border-bottom-style: solid 1px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+    background: inherit;
+    color: black;
+}
+
+select::ms-expand {
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
 }
 
 input:focus {
