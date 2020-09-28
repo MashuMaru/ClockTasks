@@ -86,19 +86,47 @@ function runTime() {
 setInterval(runTime, 1000);
 
 
+
 $(document).ready(function () {
     $(".add").click(function () {
+        
         $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
-        $('.delete').click(function (){
-            $.each($(".task-input"), function (){
-                $(".completed").append("<option>" + $(this).val() + "<option>");
-            })
-        })
+        
     });
 
     $(document).on("click", ".delete", function(){
-        $(this).parent().remove();
-        });
+        if ($(this).siblings(".task-input").val()) {
+            $(this).parent().remove();
+            $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" disabled="disabled"></div>'));
+        } else {
+            $(this).parent().remove();
+        } $(".task-input1").append(function(){
+            var inputValue = $(".task-input").value();    
+            $(".task-input", inputValue).appendTo(".task-input2");
+    });
+
+
+    // $(".delete").click(function() {
+    //     $(".task-input").append(function(){
+    //         var inputValue = $(this).val();    
+    //         $("inputValue").appendTo(".task-input2");
+    
+    //     });
+    
+    });
+
+
+        // $(this).parent().remove();
+        // if($(this).val()) {}
+        // $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" disabled="disabled"></div>'));
+    });
+        // $(document).on("click", ".delete", function(){    
+            // $.each($(".task-input"), function (){
+            //     $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" disabled="disabled"></div>'));
+                // $(".task-input")
+        //     })
+        // });
+    // });
     
         
 
@@ -107,16 +135,4 @@ $(document).ready(function () {
         });
 
 
-    });
-
-
-    //     $('.delete').click(function (){
-    //         $.each($(".task-input"), function (){
-    //             $(".completed").append("<option>" + $(this).val() + "<option>");
-    //         })
-    //     })
-    // })
-
-
-
-
+    ;
