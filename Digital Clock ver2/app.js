@@ -97,12 +97,11 @@ $(document).ready(function () {
     $(document).on("click", ".delete", function(){
         if ($(this).siblings(".task-input").val()) {
             $(this).parent().remove();
-            $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" disabled="disabled"></div>'));
+            $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" value = "" disabled = "disabled"></div>'));
         } else {
             $(this).parent().remove();
-        } $(".task-input1").append(function(){
-            var inputValue = $(".task-input").value();    
-            $(".task-input", inputValue).appendTo(".task-input2");
+        } $(".task-input2").appendTo(function(){
+            $(".task-input2").val($(this).val());
     });
 
 
