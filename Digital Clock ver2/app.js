@@ -90,7 +90,7 @@ setInterval(runTime, 1000);
 $(document).ready(function () {
     $(".add").click(function () {
         
-        $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button class="delete side-btn">X</button></div>')); 
+        $(".list").append($('<div class="list-item"><input type="Tasks" class= "task-input"/><button class="done side-btn">✓</button><button type="submit" class="delete side-btn">X</button></div>')); 
         
     });
 
@@ -100,8 +100,8 @@ $(document).ready(function () {
             $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" value = "" disabled = "disabled"></div>'));
         } else {
             $(this).parent().remove();
-        } $(".task-input2").appendTo(function(){
-            $(".task-input2").val($(this).val());
+        } $(".task-input").append(function(){
+            $(".task-input").val($(this).val());
     });
 
 
