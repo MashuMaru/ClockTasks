@@ -97,43 +97,19 @@ $(document).ready(function () {
     $(document).on("click", ".delete", function(){
         if ($(this).siblings(".task-input").val()) {
             $(this).parent().remove();
-            $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" value = "" disabled = "disabled"></div>'));
-            $(".task-input").clone(function(){
-                $(".task-input").val($(this).val());
-            });
+            $(".completed-section").append($('<div class="list-item"><p class="task-input2 completed">' + ($(this).siblings(".task-input").val()) + '</p>'));
+
         } else {
             $(this).parent().remove();
         } 
 
+        
+
 });
 
-    // $(".delete").click(function() {
-    //     $(".task-input").append(function(){
-    //         var inputValue = $(this).val();    
-    //         $("inputValue").appendTo(".task-input2");
-    
-    //     });
-    
-    // });
-
-
-        // $(this).parent().remove();
-        // if($(this).val()) {}
-        // $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" disabled="disabled"></div>'));
     });
-        // $(document).on("click", ".delete", function(){    
-            // $.each($(".task-input"), function (){
-            //     $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" disabled="disabled"></div>'));
-                // $(".task-input")
-        //     })
-        // });
-    // });
-    
-        
 
     $(document).on("click", ".done", function(){
         $(this).siblings(".task-input").toggleClass("done-strike")
-        });
-
-
-    ;
+            $(this).toggleClass("done-click");
+            });

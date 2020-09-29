@@ -108,8 +108,8 @@ h3 {
 .completed-section {
     background: #ccc;
     width: 400px;
-    height: 250px;
-    max-height: 300px;
+    height: 100%;
+    max-height: 550px;
     /* height: 500px; */
     text-align: center;
     position: relative;
@@ -135,26 +135,26 @@ input {
     color: black;
 }
 
-/* p {
+p {
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
-    width: 65%;
-    left: 100%;
+    width: 95%;
+    margin: 0 auto 0 auto;
     margin-top: 30px;
-    text-align: center;
-    font-style: italic;
-    /* text-decoration: line-through; */
-    /* margin-bottom: 20px; */
-    /* padding-bottom: 10px;
-    border-bottom-style: solid 1px;
+    /* text-align: center; */
+    left: 50px;
+
+    margin-bottom: 20px; 
+    padding-bottom: 10px;
+    border-bottom-style: solid;
     outline: 0;
     border-width: 0 0 1px;
     border-color: black;
     background: inherit;
     color: black;
     -webkit-appearance: none;
-    -moz-appearance: none; */
-/* } */ 
+    -moz-appearance: none;
+ }
 
 select::ms-expand {
     display: none;
