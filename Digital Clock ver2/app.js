@@ -97,13 +97,14 @@ $(document).ready(function () {
     $(document).on("click", ".delete", function(){
         if ($(this).siblings(".task-input").val()) {
             $(this).parent().remove();
-            console.log($(this, "#t1").val);
             $(".completed-section").append($('<div class="list-item"><input type="text" name="textbox1" class="task-input2 completed" value = "" disabled = "disabled"></div>'));
+            $(".task-input").clone(function(){
+                $(".task-input").val($(this).val());
+            });
         } else {
             $(this).parent().remove();
-        } $(".task-input").append(function(){
-            $(".task-input").val($(this).val());
-    });
+        } 
+
 });
 
     // $(".delete").click(function() {
