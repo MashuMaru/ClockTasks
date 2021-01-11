@@ -7,6 +7,7 @@
 body {
     /* background: #43658b; */
     background: #7e8a97;
+    scroll-behavior: smooth;
 }
 
 h3 {
@@ -50,14 +51,14 @@ h3 {
     background: #000;
     color: white;
     padding: 5px 10px;
-    /* font-family: sans-serif; */
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    position: absolute;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     z-index: 1;
-    top: 258px;
-    left: 39%; 
+    top: 15px;
     border-radius: 15px;
 }
 
@@ -67,14 +68,14 @@ h3 {
     color: white;
     padding: 5px 10px;
     margin-top: 25px;
-    /* font-family: sans-serif; */
     font-family: 'Quicksand', sans-serif;;
     font-weight: bold;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     z-index: 1;
     top: 18px;
-    left: 30%; 
     border-radius: 15px;
 }
 
@@ -84,8 +85,6 @@ h3 {
     font-size: 55px;
     height: 100%;
     padding-top: 25px;
-    /* font-family: 'Mina', sans-serif; */
-    /* font-family: sans-serif; */
     font-family: 'Quicksand', sans-serif;;
     border-radius: 15px;
 }
@@ -144,7 +143,7 @@ p {
     /* text-align: center; */
     left: 50px;
 
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom-style: solid;
     outline: 0;
@@ -168,10 +167,13 @@ input:focus {
     border-color: white;
 }
 
+.add-wrapper {
+    text-align: center;
+}
 
 .add {
     background: #81b214;
-    display: block;
+    /* display: block; */
     font-size: 25px;
     text-align: center;
     height: 50px;
@@ -179,11 +181,15 @@ input:focus {
     border-radius: 50%;
     border: 0.5px solid black;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     top: 25%;
-    left: 46%;
+    /* left: 48.5%; */
     opacity: 0.5;
-    /* margin-top: 15px; */
-    margin: 10px 0 35px 0;
+    margin-top: 15px;
+    /* margin: 10px 0 35px 0; */
+    transition: transform .25s, visibility .25s ease-in;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
 
 }
 
@@ -197,6 +203,11 @@ input:focus {
     border-radius: 50%; */
     border: 0.5px solid black;
     opacity: 1;
+    transition: transform .25s, visibility .25s ease-in;
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, .2);
 }
 
 .side-btn {
@@ -213,26 +224,37 @@ input:focus {
 
 .done {
     background: #cedebd;
+    transition: transform .25s, visibility .25s ease-in;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
     /* margin: 10px; */
-    
+
 }
 
 .delete {
     background: #ffc7c7;
+    transition: transform .25s, visibility .25s ease-in;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
 }
 
 .delete:hover {
     background: #ec0101;
-    
+
     opacity: 1;
+    transition: transform .25s, visibility .25s ease-in;
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, .2);
 }
 
 .done:hover {
     background: #81b214;
     opacity: 1;
-    /* height: 35px;
-    width: 35px;
-    border-radius: 50%; */
+    transition: transform .25s, visibility .25s ease-in;
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, .2);
 }
 
 .done-click {
@@ -252,5 +274,32 @@ input:focus {
 
 button {
     outline: none;
-    
+    cursor:pointer;
+
 }
+
+#add-des {
+  background-color: transparent;
+  position: absolute;
+  top: -25%;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 5px;
+  border-width: 0;
+  border-bottom-style: none;
+  width: 125px;
+  font-style: italic;
+}
+
+/* #done-des {
+  background-color: transparent;
+  position: absolute;
+  top: -25%;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 5px;
+  border-width: 0;
+  border-bottom-style: none;
+  width: 125px;
+  font-style: italic;
+} */
